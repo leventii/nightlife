@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,400i,700,700i|Knewave&display=swap');
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/grid";
+
+// variables
+$enable-shadows: true;
+$enable-gradients: true;
+$body-bg: theme-color("dark");
+$body-color: #fff;
+$font-family-base: 'Barlow', sans-serif;
+$theme-colors: (
+  "primary": #8e8be6,
+  "success": #68d6a6,
+  "danger": #c555d6,
+  "dark": #161642
+);
+$modal-content-bg: theme-color-level(dark, -1);
+$modal-header-border-width: 0;
+$modal-header-border-color: transparent;
+$modal-footer-border-width: 0;
+$modal-footer-border-color: transparent;
+
+// own code
+body {
+  @include gradient-directional(theme-color-level(primary, 5), theme-color("dark"), -135deg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Knewave, cursive;
+  font-weight: normal;
+}
+
+@import "~bootstrap/scss/bootstrap";

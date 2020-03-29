@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nightlife</title>
+  </head>
+  <body>
+    <header class="jumbotron-fluid my-5 py-3 px-5">
+      <h1 class="text-right">Until.</h1>
+      <div class="progress" style="height:30px">
+        <div class="progress-bar bg-danger" role="progressbar" style="width:10%" aria-valuenow="10" aria-minvalue="0" aria-maxvalue="100"></div>
+      </div>
+    </header>
+    <section class="container-fluid">
+      <div class="row justify-content-between">
+        <article class="col-sm-4 py-3 px-5">
+          <h1 class="mb-4">Party starts here.</h1>
+          <p>Dress Code, as follows:</p>
+          <ul>
+            <li>Become your best fantasy self.</li>
+          </ul>
+
+          <p>Code of Conduct, as follows:</p>
+          <ol>
+            <li>Racism, sexism, homophobia, transphobia, and other forms of bigotry will not be tolerated here.</li>
+            <li>Be gay and have fun!</li>
+          </ol>
+        </article>
+        <figure class="col-md-6 p-0">
+          <img src="https://via.placeholder.com/800" class="img-fluid" alt="Banner">
+        </figure>
+      </div>
+    </section>
+    <footer class="jumbotron-fluid text-center my-5">
+      <h3>Get the latest update.</h3>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subscribeForm">Sign Up</button>
+    </footer>
+
+    <section class="modal fade" id="subscribeForm" tabindex="-1" role="dialog" aria-labelledby="subscribeForm" aria-hidden="true">
+      <article class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h4 class="modal-title">Subscribe</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="close">&times;</button>
+          </header>
+          <div class="modal-body">
+            <form action="index.html" method="post">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" name="name" value="">
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="email" value="">
+              </div>
+            </form>
+          </div>
+          <footer class="modal-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-danger" data-dismiss="modal">Reset</button>
+          </footer>
+        </div>
+      </article>
+    </section>
+
+    <script src="./bundle.js"></script>
+  </body>
+</html>
